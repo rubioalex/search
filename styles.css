@@ -1,0 +1,225 @@
+body {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+/* INDEX PAGE STYLES */
+
+.right-side-bar {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 230px;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.right-side-bar a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    transition: font-size 0.2s;
+}
+
+.right-side-bar a:hover {
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.google-container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+}
+
+#google-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#google-logo {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    position: relative;
+}
+
+.search-box {
+    width: 530px;
+    margin-bottom: 10px;
+    height: 38px;
+    border-radius: 20px;
+    padding-left: 50px;
+    font-size: 18px;
+    border: 1px solid gray;
+    transition: background-color 0.15s,
+                border-color 0.15s;
+    margin-bottom: 30px;
+}
+
+.search-box:hover {
+    background-color: rgb(223, 223, 223);
+    border-color: rgb(223, 223, 223);
+}
+
+.search-icon {
+    width: 22px;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+}
+
+.mic-icon {
+    width: 20px;
+    position: absolute;
+    right: 55px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.camera-icon {
+    width: 20px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.search-button, .lucky {
+    padding: 12px 17px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    transition: background-color 0.2s,
+                font-size 0.2s,
+                color 0.6s;
+}
+
+.search-button:hover, .lucky:hover {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+
+.search-button {
+    position: absolute;
+    top: 64px;
+    left: 142px;
+}
+
+.lucky {
+    position: absolute;
+    top: 260px;
+    right: 150px;
+}
+
+/* IMAGE SEARCH STYLES */
+
+.search-upper-right {
+    width: auto;
+}
+
+.keyboard {
+    width: 28px;
+    position: absolute;
+    right: 88px;
+    top: 7px;
+}
+
+.images-head {
+    position: absolute;
+    color: rgb(179, 3, 3);
+    font-weight: 400;
+    font-size: 17px;
+    top: 144px;
+    right: 160px;
+}
+
+hr {
+    background-color: rgb(232, 231, 231);
+    border-width: 0;
+    height: 1px;
+}
+
+/* ADVANCED SEARCH STYLES */
+
+.advanced-google-logo {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.advanced-subtitle {
+    margin-top: 40px;
+    margin-left: 60px;
+    color: rgb(218, 7, 7);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.form-box {
+    padding-left: 20px;
+    margin-top: 50px;
+}
+
+.form-box > p {
+    margin-bottom: 30px;
+}
+
+.form-form {
+    row-gap: 15px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 150px 420px;
+}
+
+.form-form > p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.form-form > input {
+    height: 25px;
+    border: 1px solid rgb(209, 207, 207);
+    border-radius: 0px;
+    padding-left: 8px;
+}
+
+.form-form > input:focus {
+    outline: none;
+    border: 1px solid rgb(0, 136, 255);
+    box-shadow: 0px 0px 10px rgb(231, 231, 231);
+}
+
+.form-form > button {
+    background-color: #4d90fe;
+    color: white;
+    border: none;
+    border-radius: 3px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    padding: 9px 15px;
+    grid-column: span 2;
+    justify-self: end;
+
+    cursor: pointer;
+
+    transition: box-shadow 0.2s;
+}
+
+.form-form > button:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.651);
+}
